@@ -1,0 +1,83 @@
+.about {
+  margin-top: 65px;
+  .get-knowledge {
+    color: white;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+    .content {
+      width: 82%;
+      margin: auto;
+      text-align: center;
+      & > h1 {
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #00cb54;
+        font-size: 50px;
+      }
+      .can-learn {
+        .item {
+          border-radius: 5px;
+          padding: 20px;
+          border: 2px solid white;
+          color: rgb(255, 255, 255);
+          height: 177px;
+          transition: 0.4s;
+          p {
+            font-size: 17px;
+            font-weight: 700;
+            width: 70%;
+            margin: auto;
+          }
+          img,
+          i {
+            font-size: 73px;
+            height: 72px;
+            margin-bottom: 15px;
+          }
+          &:hover {
+            transition: 0.4s;
+            cursor: pointer;
+            transform: translateY(-10px);
+            &.item1 {
+              background: rgb(48, 122, 213);
+            }
+            &.item2 {
+              background: rgb(234, 184, 48);
+            }
+            &.item3 {
+              background: rgb(72, 167, 212);
+            }
+            &.item4 {
+              background: rgb(65, 228, 119);
+            }
+          }
+        }
+      }
+    }
+  }
+  .who-are-we {
+    padding: 50px;
+    p {
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+    .contact {
+      border-radius: 0px;
+      background: transparent;
+      color: gray;
+      border: 2px solid gray;
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        background: gray;
+        color: white;
+      }
+    }
+  }
+}

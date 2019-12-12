@@ -1,0 +1,110 @@
+.footer {
+  
+  .footer-content {
+    padding: 50px;
+    background: #2c3238;
+    color: gray;
+    border-bottom: 1px solid #676161;
+    ul {
+      list-style: none;
+      padding: 0;
+      p {
+        color: #00cb54;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+      li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        a {
+          color: gray;
+          &:hover {
+            text-decoration: none;
+            color: rgb(214, 212, 212);
+          }
+        }
+      }
+    }
+    .power {
+      li {
+        margin-right: 15px;
+      }
+    }
+  }
+  .newsletter {
+    color: white;
+    background: #2c3238;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .content {
+      h3 {
+        font-weight: 700;
+        color: #00cb54;
+      }
+      .subscribe {
+        .submit {
+          display: flex;
+          justify-content: space-around;
+          width: 75%;
+          margin: auto;
+          input {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #acacac;
+            border: 1px solid #868a8d;
+            font-style: italic;
+            font-size: 15px;
+            width: 450px;
+            font-weight: 300;
+            padding: 10px 20px;
+            float: left;
+            height: 40px;
+            &::placeholder {
+              color: rgb(175, 168, 168);
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+          button {
+            border-radius: 0px;
+            background: #00cb54;
+            border: 2px solid rgb(197, 192, 192);
+            &:hover {
+              background: transparent;
+              color: #00cb54;
+              border-color: #00cb54;
+              transition: 0.3s;
+            }
+          }
+        }
+        .icons {
+          display: flex;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          justify-content: center;
+          a {
+            border: 1px solid rgba(160, 153, 153, 0.4);
+            border-radius: 100%;
+            width: 40px;
+            display: block;
+            line-height: 38px;
+            height: 40px;
+            color: rgba(138, 128, 128, 0.7);
+            margin-left: 10px;
+            margin-right: 10px;
+            &:hover {
+              border-color: #00cb54;
+              background: #00cb54;
+              color: white;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

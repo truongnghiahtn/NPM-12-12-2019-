@@ -1,0 +1,244 @@
+.header {
+  font-family: "Work Sans", sans-serif;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  box-shadow: 0px 1px 6px 0px #bba9a9;
+  background: white;
+  &.animate {
+    // padding: 10px 30px;
+    padding: 5px 30px;
+    font-size: 17px;
+  }
+  .logo {
+    width: 120px;
+    // width :100px;
+  }
+  .navbar-brand {
+    padding: 0;
+  }
+  .navbar {
+    padding: 0.5rem 0;
+    .navbar-nav {
+      margin-right: auto;
+      margin-left: auto;
+      .nav-item {
+        position: relative;
+        margin-left: 7px;
+        margin-right: 7px;
+        .nav-link {
+          cursor: pointer;
+          font-size: 18px;
+          color: black;
+          &.icon {
+            margin-top: 5px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            line-height: 1;
+            &:hover {
+              background: rgb(197, 191, 191);
+            }
+          }
+          &.selectedLink {
+            color: #00cb54;
+          }
+        }
+        &.cart {
+          .count {
+            position: absolute;
+            top: 8px;
+            right: 0px;
+            padding: 3px;
+            border-radius: 50%;
+            background: #e91414;
+            color: white;
+            font-size: 10px;
+            width: 12px;
+            height: 13px;
+            line-height: 0.8;
+          }
+          .giohang {
+            transform: translateY(30px);
+            overflow-y: scroll;
+            width: 350px;
+            z-index: 7;
+            visibility: hidden;
+            opacity: 0;
+            left: -154px;
+            position: absolute;
+            top: 36px;
+            background: white;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+              0 10px 10px rgba(0, 0, 0, 0.22);
+            .item {
+              text-align: left;
+              padding: 15px 15px;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+              display: flex;
+              justify-content: space-between;
+              &:hover {
+                background: #e8e8e8;
+                transition: 0.3s;
+                cursor: pointer;
+              }
+              .media {
+                width: 90%;
+                .media-body {
+                  padding-left: 15px;
+                  .name-course {
+                    color: gray;
+                  }
+                }
+                .img {
+                  width: 69px;
+                  height: 69px;
+                }
+              }
+            }
+            .sum {
+              text-align: center;
+            }
+            .buttons {
+              display: flex;
+              width: 73%;
+              justify-content: space-around;
+              margin: auto;
+              .btn-view-cart,
+              .btn-checkout {
+                .btn-123 {
+                  transform: translateX(0);
+                }
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+              .btn-view-cart {
+                .btn-123 {
+                  .btn-6 {
+                    span {
+                      background-color: #00cb54;
+                    }
+                  }
+                }
+              }
+              .btn-checkout {
+                .btn-123 {
+                  .btn-6 {
+                    span {
+                      background-color: #73abff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &:hover {
+            .giohang {
+              min-height: 100px;
+              max-height: 400px;
+              opacity: 1;
+              visibility: visible;
+              transition: 0.5s;
+              transform: translateY(0px);
+            }
+          }
+        }
+        &.login {
+          position: relative;
+          .user {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-color: rgb(104, 111, 122);
+            border-radius: 50%;
+            width: 39px;
+            height: 39px;
+            .user-icon {
+              font-size: 13px;
+              color: white;
+              padding: 10px;
+              line-height: 1;
+            }
+          }
+          .user-info {
+            position: absolute;
+            transition: 0.3s;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            background: white;
+            opacity: 0;
+            visibility: hidden;
+            box-shadow: 0px 1px 4px 1px #797575;
+            .user-email {
+              display: flex;
+              justify-content: flex-start;
+              padding: 15px 25px;
+            }
+            .item {
+              padding: 12px 25px;
+              cursor: pointer;
+              &.profile {
+                color: #29303b;
+                display: block;
+                &:hover {
+                  color: #007791;
+                  text-decoration: none;
+                }
+              }
+              &.his {
+                color: #29303b;
+                display: block;
+                &:hover {
+                  color: #007791;
+                  text-decoration: none;
+                }
+              }
+              &:hover {
+                background: #f2f3f5;
+                transition: 0.3s;
+                color: #007791;
+              }
+              .icon {
+                display: inline-block;
+                margin-right: 10px;
+                width: 20px;
+              }
+            }
+          }
+          &:hover {
+            .user-info {
+              opacity: 1;
+              transition: 0.3s;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .sign_in{
+    .btn-123 {
+      .btn-6 {
+        left: 130px;
+        z-index: 20;
+      }
+    }
+  }
+  .sign_up{
+    .btn-123 {
+      .btn-6 {
+        left: 120px;
+        z-index: 20;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.cart-page {
+  background: linear-gradient(to right, #eecda3, #3d8cb9);
+  margin-top: 65px;
+  height: 100%;
+  padding-top: 50px;
+  .col-7 {
+    .table {
+      .product {
+        text-align: left;
+        width: 250px;
+      }
+      tbody {
+        tr {
+          text-align: center;
+          &:hover {
+            background: #e6e4e4;
+            cursor: pointer;
+          }
+        }
+      }
+      .price,
+      .remove {
+        width: 80px;
+      }
+      .info {
+        text-align: left;
+        width: 250px;
+      }
+    }
+    .fa.fa-trash {
+      cursor: pointer;
+      &:hover {
+        padding: 6px;
+        width: 25px;
+        height: 25px;
+        background: #9e9898;
+        border-radius: 50%;
+        color: white;
+        line-height: 0.9;
+      }
+    }
+  }
+  img {
+    height: 70px;
+  }
+}

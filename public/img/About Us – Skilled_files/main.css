@@ -1,0 +1,340 @@
+.aislin-demo-purchase-button {
+    position: relative;
+    display: inline-block;
+    z-index: 99999;
+    background: #86bc3d;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.35);
+    border-bottom: 4px solid #709e33;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.aislin-demo-purchase-button.outer {
+    position: fixed;
+    bottom: 45px;
+    right: 40px;
+    margin: 0;
+}
+
+.aislin-demo-purchase-button a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #709e33;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    border-radius: 4px;
+}
+
+.aislin-demo-purchase-button a:hover:after {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    transition-timing-function: cubic-bezier(.52,1.64,.37,.66);
+}
+
+.aislin-demo-purchase-button a {
+    display: block;
+    padding: 13px 30px 12px 26px;
+    color: #fff;
+    line-height: 25px;
+    font-size: 17px;
+    font-family: Roboto;
+}
+
+.aislin-demo-purchase-button a:hover {
+    color: #fff;
+}
+
+.aislin-demo-purchase-button svg {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    position: relative;
+    top: 3px;
+}
+
+.aislin-demo-bar-dev {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+    padding: 5px;
+}
+
+.aislin-demo-bar-dev a {
+    background: #3b9c3b;
+    color: #fff;
+    padding: 3px 10px;
+    margin-bottom: 2px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.aislin-demo-bar-dev a:hover {
+    color: #fff;
+    background: #68b168;
+}
+
+/* Demos */
+
+.demo-wrap {
+    position: fixed;
+    right: -294px;
+    background: #fff;
+    z-index: 9999999;
+    top: 0;
+    width: 294px;
+    font-size: 17px;
+    font-family: Roboto;
+    letter-spacing: 0;
+}
+
+.demo-wrap.open {
+    box-shadow: 0 4px 13px #00000045;
+}
+
+.demo-wrap h2 {
+    text-align: center;
+    margin-top: 25px !important;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.demo-wrap .inner {
+    overflow-y: scroll;
+    height: 100vh;
+    padding: 15px;
+}
+
+.demo-wrap .inner p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    font-style: normal;
+    font-family: Roboto;
+    padding: 0 24px;
+}
+
+.demo-wrap .logo {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f9fafc;
+    margin: -15px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.demo-wrap .logo h2 {
+    text-transform: uppercase;
+    margin: 15px 0 0 !important;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: Roboto;
+}
+
+.demo-wrap .logo h3 {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 21px;
+    font-style: normal;
+    font-family: Roboto;
+}
+
+.demo-wrap .thumb .large {
+    display: none;
+}
+
+/* Related sites */
+.demo-wrap .related > h2 {
+    text-align: center;
+    padding: 20px;
+    background: #f9fafc;
+    margin: -15px;
+    margin-bottom: 0;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    text-transform: uppercase;
+}
+
+.demo-wrap .related .site {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.demo-wrap .related .site:last-child {
+    padding-bottom: 15px;
+    border-bottom: 0;
+}
+
+.large-hover {
+    display: none;
+    position: absolute;
+    z-index: 9999999;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+}
+
+.demo-trigger {
+    position: absolute;
+    left: -80px;
+    top: 178px;
+    background: #414141;
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    padding: 15px 16px 15px 43px;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transform: rotate(-90deg);
+    line-height: 17px;
+
+/*    animation: glow 3s;
+    -moz-animation: glow 3s infinite;
+    -webkit-animation: glow 3s infinite;*/
+}
+
+.demo-trigger svg {
+    position: absolute;
+    left: 18px;
+    top: 16px;
+    width: 17px;
+    height: 17px;
+    margin-right: 6px;
+    fill: #fff;
+}
+
+.demo-trigger:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #339fdf;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.demo-trigger:hover:after {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    transition-timing-function: cubic-bezier(.52,1.64,.37,.66);
+}
+
+.main-demo a {
+    border: 1px solid #ededed;
+    display: inline-block;
+}
+
+.main-demo img {
+    max-width: 100%;
+}
+
+ul.demos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /*margin-left: -5px;*/
+}
+ul.demos li {
+    /*flex-grow: 1;*/
+    width: 50%;
+    padding: 3px;
+}
+
+ul.demos li img {
+    max-width: 100%;
+    transition: transform 0.2s;
+}
+ul.demos li a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-demo ul li {
+    width: 100%;
+}
+
+ul.demos li span {
+    position: absolute;
+    bottom: -40px;
+    background: #70ab21;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    transition: all 0.2s;
+    color: #fff;
+    left: 0;
+    right: 0;
+}
+
+/*.petal ul.demos li span,
+.tangle ul.demos li span {
+    background: #86bc3d;
+}*/
+
+ul.demos li a:hover img {
+    transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -ms-transform: none;
+}
+
+ul.demos li a:hover span {
+    bottom: 0;
+}
+
+@-moz-keyframes glow /* Firefox */
+{
+    0%   {background:#282e3f;}
+    50%  {background:#ff564a;}
+    100%   {background:#282e3f;}
+}
+
+@-webkit-keyframes glow /* Chrome */
+{
+    0%   {background:#282e3f;}
+    50%  {background:#ff564a;}
+    100%   {background:#282e3f;}
+}
+
+@media (max-width: 768px) {
+    .demo-wrap {
+        display: none;
+    }
+    .aislin-demo-purchase-button.outer {
+        bottom: 25px;
+        right: 25px;
+    }
+}

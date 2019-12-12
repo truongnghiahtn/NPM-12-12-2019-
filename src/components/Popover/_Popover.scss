@@ -1,0 +1,209 @@
+.popover {
+  max-width: 400px;
+  z-index: 9;
+  .popover-inner {
+    padding: 35px 40px 22px;
+    z-index: 1030;
+    -webkit-box-shadow: 0 4px 16px rgba(20, 23, 28, 0.25);
+    box-shadow: 0 4px 16px rgba(20, 23, 28, 0.25);
+    .popover_header {
+      color: #686f7a;
+      .-avatar {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 5px;
+        }
+        p {
+          display: inline-block;
+        }
+      }
+      .-lastupdated {
+        font-size: 13px;
+        margin: 0px;
+        text-align: right;
+        width: 100px;
+      }
+      .popover-header {
+        text-transform: capitalize;
+        visibility: visible;
+        display: block !important;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 3;
+        -moz-line-clamp: 3;
+        -ms-line-clamp: 3;
+        -o-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        -ms-box-orient: vertical;
+        -o-box-orient: vertical;
+        box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        font-size: 18px;
+        font-weight: 600 !important;
+        line-height: 1.33;
+        letter-spacing: -0.3px;
+        a {
+          color: #505763;
+        }
+      }
+      .popover_badge {
+        &.-with-content {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          margin: 10px 0;
+        }
+        .content-info {
+          margin-left: 5px;
+          color: #686f7a;
+          display: block;
+          font-size: 12px;
+          overflow: auto;
+          span {
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .course-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        letter-spacing: -0.1px;
+        margin: 0 -5px;
+        .e-icon {
+          padding: 0 5px;
+          margin-bottom: 5px;
+          i {
+            .MuiSvgIcon-root {
+              font-size: 22px;
+              margin-right: 2px;
+              margin-bottom: 3px;
+              fill: #273044;
+            }
+          }
+        }
+      }
+    }
+    .popover_body {
+      color: #686f7a;
+      &.popover-body {
+        padding: 0;
+      }
+      .description {
+        text-transform: capitalize;
+        margin: 0 0 5px;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        display: -webkit-box !important;
+      }
+      .description-info {
+        line-height: 26px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+      }
+      .MuiCardActions-root {
+        padding: 0;
+        margin: 10px 0;
+      }
+      .heart {
+        .cart-heart {
+          /*           i {
+                text-stroke: 1px #ec5252;
+                -webkit-text-stroke: 1px #ec5252;
+                color: #fff;
+              } */
+          &.heart--color {
+            .MuiIconButton-label {
+              .MuiSvgIcon-root {
+                fill: blueviolet;
+              }
+            }
+          }
+          border: 1px solid rgba(0, 0, 0, 0.54);
+          .MuiIconButton-label {
+            .MuiSvgIcon-root {
+              font-size: 1.5rem;
+            }
+          }
+          .MuiTouchRipple-root {
+            &:focus {
+              outline: none;
+            }
+          }
+
+          &:hover,
+          &:focus {
+            outline: none;
+            i {
+              color: #ec5252;
+            }
+          }
+        }
+
+        .fee {
+          font-family: "Raleway", sans-serif;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.cart-btn {
+  &.MuiButtonBase-root {
+    color: #fff;
+    border: 1px solid transparent;
+    width: 100%;
+    padding: 16px 12px;
+    font-size: 15px;
+    line-height: 1.35135;
+    border-radius: 2px;
+    &:hover {
+      color: #fff;
+      border-color: transparent;
+    }
+    &:focus {
+      outline: none;
+    }
+    &.-add {
+      background-color: #ec5252;
+      &:hover {
+        background-color: #521822;
+      }
+    }
+    &.-go {
+      background-color: #00cb54;
+      &:hover {
+        background-color: #058c3d;
+      }
+    }
+    &.-disabled {
+      &.MuiButton-root.Mui-disabled {
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}

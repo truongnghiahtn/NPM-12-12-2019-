@@ -1,0 +1,92 @@
+.discount {
+  background: #f5f5f7;
+  margin: 100px 0;
+  .discount__content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .discount__detail {
+      text-align: left;
+      padding: 35px 15px;
+      .discount__header {
+        color: #333333;
+        line-height: 30px;
+        font-style: normal;
+        .-title {
+          margin-top: 10px;
+          font-size: 26px;
+          font-weight: 800;
+        }
+        .-save {
+          font-size: 24px;
+          font-weight: 300;
+        }
+      }
+      .discount__body {
+        .t-body {
+          font-size: 15px;
+          font-weight: 400;
+          color: #666666;
+          margin: 10px 0 20px;
+        }
+        .time-remaining {
+          .time-remaining__header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            h4 {
+              padding: 0 0.8em;
+              font-weight: 600;
+              font-size: 100%;
+              color: #333333;
+              line-height: 1em;
+              flex: 1 0 auto;
+              margin-bottom: 0;
+            }
+            .time-remaining__header-line {
+              border: 1px solid #ebebeb;
+              height: 1px;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .sign-up {
+        margin-top: 25px;
+        text-align: center;
+        .btn-sign-up {
+          font-family: "Raleway", sans-serif;
+          font-size: 16px;
+          color: #fff;
+          line-height: 2.2857em;
+          padding: 0 1.9286em;
+          background-color: #00cb54;
+          border-width: 2px;
+          border-style: solid;
+          border-color: #00cb54;
+          border-radius: 0;
+          transition: all 0.3s;
+          &:hover {
+            background-color: transparent;
+            color: #00cb54;
+          }
+          .MuiButton-label {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .discount__img {
+      .img-fluid {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .discount {
+    .container {
+      max-width: 1170px;
+    }
+  }
+}

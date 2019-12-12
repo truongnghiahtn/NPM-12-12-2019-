@@ -1,0 +1,22 @@
+.go-top {
+  &.MuiButton-root {
+    position: fixed;
+    cursor: pointer;
+    bottom: 30px;
+    right: 30px;
+    background-color: #202020;
+    color: white;
+    z-index: 1000;
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-transition: 0.3s;
+    transition: all 0.3s;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    &:hover {
+      color: black;
+    }
+  }
+}

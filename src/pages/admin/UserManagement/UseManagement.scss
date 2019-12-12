@@ -1,0 +1,33 @@
+.user-manage {
+  color: #ccc;
+  max-height: 1200px !important;
+  h3{
+    margin-top:30px  ;
+    margin-bottom:40px ;
+  }
+ 
+  overflow-x: hidden;
+  .user-list {
+    table {
+      text-align: left;
+      color: white;
+      
+      th,
+      td {
+        padding: 20px;
+        margin: 10px 0px;
+        border: none;
+      }
+
+    }
+  }
+}
+.item-user-taikhoan{
+  width: 125px!important;
+  overflow: hidden;
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #3a3f48;
+}

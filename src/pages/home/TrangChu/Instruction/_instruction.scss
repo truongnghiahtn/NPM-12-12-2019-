@@ -1,0 +1,246 @@
+.body {
+  margin: 0 auto;
+
+  height: 410px;
+  overflow: hidden;
+  h1{
+    font-size: 26px;
+    margin-left: 70px;
+    margin-top: 30px;
+    padding: 10px;
+    padding-left: 0;
+    font-weight: 600;
+    font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
+        color: #29303b;
+  }
+
+  .instructors {
+    padding: 10px 0;
+
+    .parent-card:hover .card {
+    }
+
+    .parent-card {
+      justify-content: center;
+      position: relative;
+      .test:hover .card {
+        transform: scale(0.91);
+        filter: blur(10px);
+      }
+      .test:hover {
+        height: 300px;
+      }
+      .test {
+        transition: all 0.25s;
+
+        .card {
+          padding: 10px;
+          position: relative;
+          height: 280px;
+          width: 170px;
+          margin: 0 auto;
+          z-index: 6;
+          background: white;
+          img {
+            width: 120px;
+            height: 140px;
+            border-radius: 50%;
+            margin: 0 auto;
+            transition: all 0.25s;
+            box-sizing: border-box;
+          }
+          .detail-card {
+            padding: 10px 0;
+            p {
+              margin-bottom: 0px;
+              font-size: 14px;
+              margin: 0;
+            }
+            h3 {
+              font-size: 18px;
+              font-weight: 600;
+            }
+          }
+          .icon-card {
+            color: rgba(255, 187, 0, 0.692);
+          }
+          border: 1px solid white;
+          text-align: center;
+          transition: all 0.25s;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.1);
+
+            -webkit-box-shadow: 0px 0px 23px -15px rgba(48, 44, 48, 1);
+            -moz-box-shadow: 0px 0px 23px -15px rgba(48, 44, 48, 1);
+            box-shadow: 0px 0px 23px -15px rgba(48, 44, 48, 1);
+            z-index: 7;
+            background: #f5f5f5;
+            img {
+              transform: scale(0.9);
+            }
+            .icon-card {
+              opacity: 0;
+            }
+            filter: none;
+            .info-card {
+              opacity: 1;
+              transform: scale(1);
+              .info-icon {
+                .fa {
+                  transform: translate(-1px, 0px);
+                  transition: all 0.25s;
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    transition: all 0.4s;
+                    transform: scale(0);
+                    border-radius: 5px;
+                  }
+                }
+                .fa-facebook {
+                  transition-delay: 0.3s;
+                  &:hover::after {
+                    background: #4267b2;
+                    transform: scale(1);
+                  }
+                }
+                .fa-envelope {
+                  transition-delay: 0.4s;
+                  &:hover::after {
+                    background: #d93025;
+                    transform: scale(1);
+                  }
+                }
+                .fa-twitter {
+                  transition-delay: 0.5s;
+                  &:hover::after {
+                    background: #1da1f2;
+                    transform: scale(1);
+                  }
+                }
+                .fa-youtube-play {
+                  transition-delay: 0.6s;
+                  &:hover::after {
+                    background: #ff0000;
+                    transform: scale(1);
+                  }
+                }
+              }
+            }
+          }
+          .info-card {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            //   background: rgba(48, 44, 48, 0.7);
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 0.5s;
+            color: black;
+            transform: scale(0.5);
+            border-radius: 4px;
+            .info-icon {
+              margin-top: 5px;
+              text-align: left;
+
+              overflow: hidden;
+              .fa {
+                border-radius: 5px;
+                height: 25px;
+                width: 30px;
+                position: relative;
+                left: 0;
+                line-height: 25px;
+                text-align: center;
+                background: rgba(48, 44, 48, 0.6);
+                // background: #f5f5f5;
+                margin-bottom: 1px;
+                transform: translate(-30px, 0px);
+                color: rgba($color: white, $alpha: 0.7);
+                &:hover {
+                  color: rgba($color: white, $alpha: 1);
+                }
+              }
+            }
+            .view {
+              position: absolute;
+              top: 5px;
+              right: 10px;
+            }
+            .info {
+              text-align: left;
+
+              font-size: 14px;
+              margin-top: 10px;
+              padding: 0 5px;
+
+              p {
+                margin: 5px 0;
+              }
+            }
+            .card-footer {
+              display: flex;
+              justify-content: center;
+              margin-top: 120px;
+              font-size: 13px;
+              background: #f5f5f5;
+              border-top: none;
+              padding: 5px;
+              position: relative;
+              z-index: 20;
+              p {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.count_courses{
+ 
+  
+  background-image: url('/img/2.jpg');
+  position: relative;
+  
+  &::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 203, 84, 0.5);
+    z-index: 5;
+
+  }
+  .count_icon{
+    display: flex;
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    .icon{
+      height: 300px;
+      width: 25%;
+      text-align: center;
+      position: relative;
+      z-index: 6;
+      color: white;
+      padding: 60px 0;
+      p{
+        font-size: 28px;
+      }
+      .fa{
+        font-size: 70px;
+      }    
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.Trangchu_Blog {
+  width: 88%;
+  margin: 0px auto;
+  .Title {
+    h1{
+        font-size: 26px;
+        margin-top: 30px;
+        padding: 10px;
+        padding-left: 0;
+        font-weight: 600;
+        font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
+        color: #29303b;
+    }
+  }
+  .content_Blog{
+      .item{
+          padding: 18px;
+          img{
+              border-radius:4px ;
+              margin-bottom:15px ;
+          }
+          .detail_content{
+              padding: 0 10px;
+              h2{
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 21px;
+                text-align: left;
+                cursor: pointer;
+                
+              }
+          }
+          &:nth-child(2){
+              h2{
+                  margin-bottom: 30px;
+              }
+          }
+          .time_content{
+              padding: 0 10px;
+              .fa{
+                  opacity: 0.5;
+                  margin: 0 5px;
+              }
+          }
+        
+      }
+      .item1{
+          .event_Blog{
+              display: flex;
+              justify-content: space-between;
+              margin-bottom:20px ;
+              .title_Event_Blog{
+                  background-color: yellowgreen;
+                  border-radius:50% ;
+                  width: 22%;
+                  height: 83px;
+                  
+                  text-align: center;
+                  position: relative;
+                  z-index: 5;
+                  p{font-size: 17px;
+                    padding: 5px 0;
+                    font-weight: 600;
+                    width: 50px;
+                    transform: translate(16px,14px);
+                }
+                  &::after{
+                      content: "";
+                      width: 65px;
+                      height: 65px;
+                      border-radius:50% ;
+                      position: absolute;
+                      top: 9px;
+                      left: 9px;
+                      z-index: -2;
+                      background-color: yellow;
+                  }
+                  &::before{
+                    content: "";
+                    width: 50px;
+                    height: 50px;
+                    border-radius:50% ;
+                    position: absolute;
+                    top: 16px;
+                    left: 16px;
+                    z-index: -1;
+                    background-color: yellowgreen;
+                  }
+              }
+              .content_Event_Blog{
+                  width: 75%;
+                  h3{
+                      font-size: 18px;
+                      font-weight: 500;
+                      cursor: pointer;
+                  }
+              }
+          }
+      }
+
+  }
+}

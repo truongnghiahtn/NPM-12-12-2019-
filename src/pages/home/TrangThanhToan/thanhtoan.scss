@@ -1,0 +1,92 @@
+.checkout-page {
+  background: linear-gradient(to right, #eecda3, #3d8cb9);
+  margin-top: 65px;
+  padding-top: 50px;
+  .checkout-content {
+    .your-items {
+      background: white;
+      padding: 20px;
+      min-height: 500px;
+      .list-course {
+        max-height: 300px;
+        overflow-y: auto;
+        box-shadow: 0px 0px 5px 0px #d0c3c3;
+        .item {
+          text-align: left;
+          padding: 15px 15px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          display: flex;
+          justify-content: space-between;
+          &:hover {
+            background: #e6e4e4;
+            cursor: pointer;
+          }
+          &:last-child {
+            border-bottom: 1px solid transparent;
+          }
+          .media {
+            width: 90%;
+            .media-body {
+              padding-left: 15px;
+            }
+            .img {
+              width: 67px;
+              height: 69px;
+            }
+          }
+          .close {
+            width: 5%;
+            .fa.fa-times {
+              font-size: 15px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .total-pay {
+      padding: 20px;
+      min-height: 500px;
+      background: white;
+      .total {
+        .payment {
+          background: #efefef;
+          padding: 20px;
+          .pay-methods {
+            margin-bottom: 10px;
+            .title {
+              font-weight: 600;
+              font-size: 20px;
+            }
+            .pay-cart {
+              margin-left: 5px;
+              margin-right: 5px;
+              img {
+                height: 30px;
+                width: 30px;
+                cursor: pointer;
+              }
+            }
+          }
+          .form-control {
+            border-radius: 0px;
+            background: white;
+            &::placeholder {
+              color: rgb(131, 128, 128);
+            }
+          }
+          select {
+            width: 100%;
+            height: 37px;
+          }
+          .form-group {
+            .btn {
+              border-radius: 0px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

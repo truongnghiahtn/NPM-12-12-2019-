@@ -1,0 +1,32 @@
+.badge-with-content {
+  background: #f4c150;
+  color: #29303b;
+  margin-right: 10px;
+  border-radius: 3px;
+  font-size: 9px;
+  padding: 1px 8px;
+  border: none;
+  min-width: inherit;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+  vertical-align: baseline;
+  &::after {
+    background: inherit;
+    right: -4px;
+    border-radius: 3px;
+    content: "";
+    height: 11px;
+    position: absolute;
+    top: 2px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 11px;
+    z-index: 1;
+    display: block;
+  }
+}
