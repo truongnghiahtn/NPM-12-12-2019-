@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/NPM-12-12-2019-/static/css/main.0fd73049.chunk.css",
+    "main.js": "/NPM-12-12-2019-/static/js/main.8916cdcb.chunk.js",
+    "main.js.map": "/NPM-12-12-2019-/static/js/main.8916cdcb.chunk.js.map",
+    "runtime-main.js": "/NPM-12-12-2019-/static/js/runtime-main.e84520f2.js",
+    "runtime-main.js.map": "/NPM-12-12-2019-/static/js/runtime-main.e84520f2.js.map",
+    "static/css/2.4e9cfe7d.chunk.css": "/NPM-12-12-2019-/static/css/2.4e9cfe7d.chunk.css",
+    "static/js/2.ae5a7752.chunk.js": "/NPM-12-12-2019-/static/js/2.ae5a7752.chunk.js",
+    "static/js/2.ae5a7752.chunk.js.map": "/NPM-12-12-2019-/static/js/2.ae5a7752.chunk.js.map",
+    "index.html": "/NPM-12-12-2019-/index.html",
+    "precache-manifest.7b36f478928bc99584c1c58d18712326.js": "/NPM-12-12-2019-/precache-manifest.7b36f478928bc99584c1c58d18712326.js",
+    "service-worker.js": "/NPM-12-12-2019-/service-worker.js",
+    "static/css/2.4e9cfe7d.chunk.css.map": "/NPM-12-12-2019-/static/css/2.4e9cfe7d.chunk.css.map",
+    "static/css/main.0fd73049.chunk.css.map": "/NPM-12-12-2019-/static/css/main.0fd73049.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e84520f2.js",
+    "static/css/2.4e9cfe7d.chunk.css",
+    "static/js/2.ae5a7752.chunk.js",
+    "static/css/main.0fd73049.chunk.css",
+    "static/js/main.8916cdcb.chunk.js"
+  ]
+}

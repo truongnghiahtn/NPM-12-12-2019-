@@ -1,0 +1,114 @@
+/*
+ Theme Name:   Skilled Child - Demo
+ Theme URI:    http://example.com/wheels/
+ Description:  Skilled Aislin Demo Theme
+ Author:       Aislin
+ Author URI:   http://example.com
+ Template:     skilled
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  wheels
+*/
+
+@import url("../skilled/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/* STYLE SWITCHER */
+
+#wh-style-switcher {
+    position: fixed;
+    top: 200px;
+    left: -123px;
+    width: 123px;
+    background-color: #fff;
+    border: 1px solid #F2E9E9;
+    z-index: 999999;
+    font-size: 15px;
+    padding: 15px;
+}
+
+#wh-style-switcher-admin-only {
+    float: left;
+    background-color: #EFEFEF;
+    margin-top: 110px;
+    width: 100%;
+    text-align: center;
+}
+
+#wh-style-switcher-admin-only h4 {
+    margin: 5px 0;
+}
+
+#wh-style-switcher-admin-only p {
+    font-size: 11px;
+}
+#wh-style-switcher-admin-only li {
+    padding: 3px;
+    height: auto;
+    border: 1px solid #D7D7D7;
+    height: 62px;
+    font-size: 10px;
+}
+
+.wh-switcher-toggle {
+    /*right: -44px;
+    position: absolute;
+    padding: 5px;
+    width: 44px;
+    height: 49px;
+    cursor: pointer;
+    font-size: 39px;*/
+
+    right: -42px;
+    position: absolute;
+    padding: 5px;
+    width: 41px;
+    height: 44px;
+    cursor: pointer;
+    background-image: url("assets/img/colorswitcher-icon.png");
+}
+
+.wh-switcher-links {
+    list-style: none;
+    padding:0;
+    margin: 0;
+}
+
+.wh-switcher-links li {
+    float: left;
+    width: 50%;
+    padding: 1px;
+    margin-bottom: 3px;
+}
+
+.wh-switcher-links li.default {
+    float: left;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.wh-switcher-links li a {
+    float: left;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.wh-switcher-links li a:hover {
+    opacity: 0.8;
+}
+
+.wheels-demo-logo {
+    padding: 40px;
+}
+
+.wheels-demo-social a {
+    color: #717070;
+}
+
+.wheels-demo-social a:hover {
+    color: #AFABAB;
+}
